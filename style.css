@@ -1,19 +1,44 @@
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('static/Background.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .upload-container {
     text-align: center;
-    border: 1px solid #ccc;
     padding: 20px;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
 }
 
-input[type="file"] {
-    margin-bottom: 20px;
+.logo {
+    width: 100px; /* Adjust as needed */
+    margin: 0 auto 20px;
+}
+
+input[type=file] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f8a;
 }
