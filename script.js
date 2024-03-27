@@ -22,8 +22,7 @@ function uploadFile(file) {
             params: {
                 Bucket: "ebike-s3",
                 Key: file.name,
-                Body: file,
-                ACL: "public-read", 
+                Body: file, 
                 ContentType: file.type,
             },
         });
